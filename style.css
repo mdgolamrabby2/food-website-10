@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+  
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --primary-color: hsl(140, 40%, 48%);
+    --first-color-alt: hsl(140, 40%, 44%);
+    --title-color: hsl(140, 4%, 12%);
+    --text-color: hsl(140, 4%, 40%);
+    --text-color-light: hsl(140, 4%, 64%);
+    --white-color: hsl(0, 0%, 100%);
+    --body-color: hsl(0, 0%, 100%);
+    --container-color: hsla(0, 9%, 85%, 0.918);
+    --shadow-img: drop-shadow(0 8px 12px hsla(0, 0%, 0%, .2));
+    --filter-img: invert(1);
+    --full-black: #000;
+  
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Cherry Bomb One", cursive;
+    --biggest-font-size: 3rem;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+  
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+  
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --transition:0.5s;
+  }
+
+  body{
+    background: var(--body-color);
+    font-family: var(--body-font);
+    list-style: none;
+    outline: none;
+    overflow: hidden;
+
+  }
+
+
+/* ========Header section Start========  */
+
+
+.navbar-brand  .logo-text{
+    font-family: var(--second-font);
+    font-size: 70px;
+  }
+
+  .navbar-brand h3{
+    font-family: var(--second-font);
+    margin-left: 8px;
+   
+    color: var(--full-black);
+    
+  }
+
+
+  .nav-item{
+    padding: 0px 10px;
+  }
+
+  .fa-moon{
+    font-size: 19px;
+    color: var(--title-color);
+    margin-left: 12px;
+    cursor: pointer;
+  }
+
+
+  .nav-link{
+    color: var(--full-black);
+    font-weight: 500;
+  }
+
+
+  .active{
+    color: var(--primary-color);
+  }
+
+
+
+
+  .nav-link:hover{
+    color: var(--primary-color);
+  }
+
+
+  /* .col-lg-6{
+    border: 2px solid red;
+  } */
+
+  .hero-aria{
+    margin-top: 50px;
+  }
+
+
+  .home-title h1{
+    font-size: 65px;
+    font-family: var(--second-font);
+
+  }
+  .home-title p{
+    /* width: 400px; */
+    font-weight: 500;
+    color: var(--text-color);
+  }
+
+  .header-button{
+    color: var(--white-color);
+    padding: 12px 40px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 25px;
+    transition: var(--transition);
+
+  }
+
+  .header-button:hover{
+    background: transparent;
+    color: var(--full-black);
+    border: 1px solid var(--primary-color);
+  }
+
+/* ========Header section end========  */
+
+
+
+
+
+
+
+
+  /* ==========ENJOY Section Start========= */
+#ENJOY{
+    margin-top: 90px;
+}
+
+.col-lg-3{
+
+    background: var(--container-color);
+    padding: 23px 6px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+
+.enjoy-text{
+    font-family: var(--second-font);
+    font-size: 46px;
+
+}
+
+
+.enjoy-text h3{
+    text-align: center;
+    
+}
+
+.enjoy-text h6{
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    
+}
+
+
+
+
+.enjoy-img img:hover{
+    transform: translatey(-20px);
+    transition: var(--transition);
+
+}
+
+  /* ==========ENJOY  Section End========= */
+
+
+
+
+
+
+/* ========About US section Start========= */
+
+#About-us{
+    margin-top: 90px;
+}
+
+
+.about-text{
+    position: relative;
+    top: 160px;
+    left: 50px;
+}
+
+.about-text h1{
+    font-family: var(--second-font);
+    font-size: 50px;
+}
+
+
+.about-text p{
+    /* width: 400px; */
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+
+.about-button{
+    padding: 15px 35px;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 23px;
+    color: var(--white-color);
+    transition: var(--transition);
+}
+
+
+.about-button:hover{
+   background: transparent;
+   color: var(--full-black);
+   border: 1px solid var(--primary-color);
+
+
+
+
+
+}
+
+
+/* ========About US section End========= */
+
+
+
+
+
+/* ==========Popular Section Start=========== */
+
+
+#Popular{
+    margin-top: 100px;
+}
+
+.col-lg-4{
+    border: 1px solid red;
+}
+
+.popular-img img{
+    position: relative;
+    top: -80px;
+}
+
+
+
+.populer-text{
+    position: relative;
+    top: -30px;
+    text-align: center;
+}
+
+.populer-text h3{
+    font-size: 29px;
+    font-family: var(--second-font);
+}
+
+.populer-text p{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.populer-text h6{
+    font-size: 16px;
+    font-family: var(--second-font);
+}
+
+
+.plss-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    left: 75%;
+    cursor: pointer;
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+.cardd-down{
+    margin-top: 150px;
+}
+
+
+.cardgap{
+    margin-top: 70px;
+}
+/* ==========Popular Section End=========== */
+
+
+
+
+/* ==========Join Us section Start========= */
+
+#join-us{
+  
+    background-image: url(photo/join-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+    border-radius: 40px; 
+     margin-top: 110px;
+     filter: blur(3px); 
+     
+     
+}
+
+
+.form{
+    position: relative;
+    top: -333px;
+}
+
+
+.form h2{
+    color: var(--white-color);
+    font-size: 46px;
+    font-family: var(--second-font);
+}
+
+.form p{
+
+    color: var(--white-color);
+    font-weight: 600;
+
+}
+
+
+.form input{
+    width: 500px;
+    height: 80px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 100px;
+}
+
+
+
+.input-button{
+    padding: 16px 30px;
+    background: var(--primary-color);
+    border-radius: 30px;
+    color: var(--white-color);
+    border: none;
+    position: relative;
+    left: -100px;
+}
+
+
+
+/* ==========Join Us section End========= */
+
+
+@media screen and (max-width: 600px) {
+    #join-us{
+    background-image: url(photo/join-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    border-radius: 40px; 
+     margin-top: 110px;
+     filter: blur(3px); 
+     
+      
+    }
+  }
+
+
+
+
+  
+@media screen and (max-width: 600px) {
+    .form input{
+
+        width: 400px;
+        height: 80px;
+        padding: 8px 20px;
+        border-radius: 40px;
+        border: none;
+        outline: none;
+        position: relative;
+        left: -20px;
+       
+     
+    }
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .input-button{
+       margin-top: 14px;
+       margin-left: 180px;
+    }
+  }
+
+  
+
+
+
+@media screen and (max-width: 600px) {
+    .col-lg-3{
+       margin: 20px 0px;
+    }
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .home-title h1, p .header-button{
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    p {
+      text-align: center;
+    }
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+     .header-button{
+    position: relative;
+    left: 60px;
+    }
+  }
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .about-text{
+      position: relative;
+      top: -40px;
+   }
+ }
+
+ @media screen and (max-width: 600px) {
+    .about-img{
+      position: relative;
+      top: -80px;
+   }
+ }
+
+ 
+ @media screen and (max-width: 600px) {
+    .about-button{
+   position: relative;
+   left: 60px;
+   }
+ }
+
+
+
+
+
